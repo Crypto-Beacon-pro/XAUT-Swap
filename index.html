@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XAUT-Swap — Tokenized Gold DEX on TRON | Swap, Pool, Staking & Credit for XAUT</title>
+<meta name="description" content="XAUT-Swap is the premier decentralized exchange for tokenized gold on TRON. Swap XAUT, provide liquidity, earn staking rewards and access gold-backed credit — all in one DeFi protocol. Built natively on TRON at xautswap.vercel.app.">
+<meta name="keywords" content="XAUT swap, XAUT DeFi, tokenized gold TRON, XAUT staking, gold backed crypto, TRON DEX, XAUT liquidity, gold token swap, XAUT credit, Tether Gold, TRON DeFi, gold yield, XAUT pool, xautswap, digital gold exchange, gold collateral, XAUT earn, TRC20 gold, decentralized gold exchange">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="XAUT-Swap">
+<meta name="language" content="English">
+<meta name="revisit-after" content="3 days">
+<meta name="theme-color" content="#0A0A08">
+<link rel="canonical" href="https://xautswap.vercel.app/">
+
+<!-- Favicon SVG — Gold bar + diamond luxury icon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0A08'/%3E%3Cdefs%3E%3ClinearGradient id='gld' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FFD700'/%3E%3Cstop offset='50%25' stop-color='%25C8973A'/%3E%3Cstop offset='100%25' stop-color='%23B8860B'/%3E%3C/linearGradient%3E%3ClinearGradient id='grn' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2326A17B'/%3E%3Cstop offset='100%25' stop-color='%231a7a5e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='10' y='22' width='44' height='24' rx='4' fill='url(%23gld)' opacity='.95'/%3E%3Crect x='14' y='18' width='36' height='8' rx='3' fill='url(%23gld)' opacity='.7'/%3E%3Crect x='12' y='27' width='40' height='2' rx='1' fill='%23B8860B' opacity='.4'/%3E%3Crect x='12' y='33' width='40' height='2' rx='1' fill='%23B8860B' opacity='.4'/%3E%3Ccircle cx='48' cy='18' r='8' fill='url(%23grn)'/%3E%3Cpath d='M48 13 L51 18 L48 23 L45 18 Z' fill='%23fff' opacity='.9'/%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xautswap.vercel.app/">
+<meta property="og:title" content="XAUT-Swap — Tokenized Gold DEX on TRON | Swap, Pool & Earn">
+<meta property="og:description" content="The premier DeFi protocol for tokenized gold on TRON. Swap XAUT, earn gold rewards, stake and access gold-backed credit. Join the future of digital gold.">
+<meta property="og:image" content="https://xautswap.vercel.app/og-image7.png">
+<meta property="og:site_name" content="XAUT-Swap">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@XAUTSwap">
+<meta name="twitter:title" content="XAUT-Swap — Tokenized Gold DEX on TRON">
+<meta name="twitter:description" content="Swap · Pool · Stake · Credit — All backed by physical gold. The most powerful XAUT DeFi protocol on TRON.">
+<meta name="twitter:image" content="https://xautswap.vercel.app/og-image7.png">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://xautswap.vercel.app/#website",
+      "url": "https://xautswap.vercel.app/",
+      "name": "XAUT-Swap",
+      "description": "Decentralized Exchange for Tokenized Gold on TRON — Swap, Pool, Staking and Gold-Backed Credit"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://xautswap.vercel.app/#organization",
+      "name": "XAUT-Swap",
+      "url": "https://xautswap.vercel.app/",
+      "logo": "https://xautswap.vercel.app/logo.png",
+      "description": "Premier decentralized exchange for tokenized gold (XAUT) on the TRON network",
+      "sameAs": ["https://twitter.com/XAUTSwap","https://t.me/xautswap","https://discord.gg/xautswap"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "XAUT-Swap Protocol",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+      "description": "DeFi protocol built on TRON for swapping, pooling, staking and gold-backed credit using XAUT tokenized gold"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"What is XAUT-Swap?","acceptedAnswer":{"@type":"Answer","text":"XAUT-Swap is a full-stack DeFi protocol built on the TRON network, specializing in tokenized gold (XAUT). It offers token swapping, liquidity pools, staking, and gold-backed credit in one seamless interface."}},
+        {"@type":"Question","name":"What is XAUT?","acceptedAnswer":{"@type":"Answer","text":"XAUT (Tether Gold) is a digital asset issued by Tether, where each token represents ownership of one troy fine ounce of physical gold held in Swiss vaults. On XAUT-Swap, XAUT trades as a TRC20 token on the TRON blockchain."}},
+        {"@type":"Question","name":"How do I swap XAUT on TRON?","acceptedAnswer":{"@type":"Answer","text":"Connect your TRON-compatible wallet (TronLink or Ledger), select your input token (e.g. USDT), set the output to XAUT, review the quoted rate and confirm the transaction. Swaps settle in 3 seconds on TRON with near-zero fees."}},
+        {"@type":"Question","name":"Is XAUT-Swap safe?","acceptedAnswer":{"@type":"Answer","text":"XAUT-Swap contracts are audited by leading blockchain security firms. The protocol is non-custodial — your assets remain in your wallet at all times. All code is open-source and verifiable on TRON."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://xautswap.vercel.app/"},
+        {"@type":"ListItem","position":2,"name":"Swap","item":"https://xautswap.vercel.app/swap"},
+        {"@type":"ListItem","position":3,"name":"Pool","item":"https://xautswap.vercel.app/pool"},
+        {"@type":"ListItem","position":4,"name":"Staking","item":"https://xautswap.vercel.app/staking"}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+:root{
+  --void:#0A0A08;--void2:#0F0F0C;--void3:#141410;--void4:#1A1A14;
+  --graphite:#1E1E18;--graphite2:#252520;--graphite3:#2E2E28;
+  --gold:#D4A843;--gold2:#C8973A;--gold3:#B8860B;--gold4:#FFE08A;--gold5:#8B6914;
+  --emerald:#26A17B;--emerald2:#1d7d5f;--emerald3:#15604a;--emerald4:#4ECBA0;
+  --text:#F5F0E8;--text2:#A09880;--text3:#5A5448;--text4:#3A3830;
+  --border:rgba(212,168,67,.08);--border2:rgba(212,168,67,.18);--border3:rgba(212,168,67,.35);
+  --gborder:rgba(38,161,123,.1);--gborder2:rgba(38,161,123,.25);
+  --font:'Space Mono',monospace;--display:'Cormorant Garamond',serif;--body:'Outfit',sans-serif;
+  --radius:10px;--radius-lg:16px;--radius-xl:24px;
+  --glow-gold:0 0 60px rgba(212,168,67,.12);
+  --glow-emerald:0 0 60px rgba(38,161,123,.1);
+  --shadow-lg:0 20px 80px rgba(0,0,0,.8);
+}
+
+body{background:var(--void);color:var(--text);font-family:var(--body);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:inherit}
+ul{list-style:none}
+
+/* Deep luxury background */
+body::before{
+  content:'';position:fixed;inset:0;
+  background:
+    radial-gradient(ellipse 70% 50% at 15% 15%, rgba(212,168,67,.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 85% 85%, rgba(38,161,123,.05) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 70% at 50% 50%, rgba(212,168,67,.02) 0%, transparent 65%);
+  pointer-events:none;z-index:0;
+}
+
+/* Gold particle grid */
+body::after{
+  content:'';position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='0.5' fill='rgba(212,168,67,0.15)'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:0;opacity:.6;
+}
+
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes goldShimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes borderGlow{0%,100%{box-shadow:0 0 15px rgba(212,168,67,.1)}50%{box-shadow:0 0 40px rgba(212,168,67,.25),0 0 80px rgba(212,168,67,.08)}}
+
+.container{max-width:1320px;margin:0 auto;padding:0 2rem;position:relative;z-index:1}
+.section{padding:6rem 0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* TYPOGRAPHY */
+h1,h2{font-family:var(--display);letter-spacing:-.01em;line-height:1.05;font-weight:700}
+h3,h4{font-family:var(--display);line-height:1.2;font-weight:600}
+h1{font-size:clamp(2.8rem,5.5vw,5.5rem)}
+h2{font-size:clamp(2rem,3.5vw,3.4rem)}
+h3{font-size:1.1rem}
+p{line-height:1.75}
+.lead{font-size:1rem;color:var(--text2);max-width:560px;line-height:1.85}
+.mono{font-family:var(--font)}
+
+.grad-gold{background:linear-gradient(135deg,var(--gold4),var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.grad-emerald{background:linear-gradient(135deg,var(--emerald4),var(--emerald));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.grad-mixed{background:linear-gradient(135deg,var(--gold),var(--emerald4),var(--gold4));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:goldShimmer 4s linear infinite}
+
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font);font-size:.58rem;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;border:1px solid var(--border2);padding:.3rem 1rem;border-radius:4px;margin-bottom:1.25rem;background:rgba(212,168,67,.04)}
+.eyebrow-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite;flex-shrink:0}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:.8rem 1.75rem;border-radius:6px;font-family:var(--font);font-weight:700;font-size:.66rem;border:none;transition:all .25s;letter-spacing:.1em;white-space:nowrap;position:relative;overflow:hidden;text-transform:uppercase;text-decoration:none}
+.btn::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.08) 0%,transparent 50%);pointer-events:none;opacity:0;transition:.2s}
+.btn:hover::after{opacity:1}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold),var(--gold4));color:#0A0A08;font-weight:800}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(212,168,67,.35)}
+.btn-emerald{background:linear-gradient(135deg,var(--emerald3),var(--emerald));color:#fff}
+.btn-emerald:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(38,161,123,.35)}
+.btn-outline{background:transparent;color:var(--gold);border:1px solid var(--border2)}
+.btn-outline:hover{border-color:var(--gold);background:rgba(212,168,67,.07);transform:translateY(-1px)}
+.btn-ghost{background:rgba(255,255,255,.04);color:var(--text2);border:1px solid var(--border)}
+.btn-ghost:hover{border-color:var(--border2);color:var(--text)}
+.btn-lg{padding:1rem 2.5rem;font-size:.75rem}
+.btn-full{width:100%;justify-content:center}
+.btn-emerald-outline{background:transparent;color:var(--emerald);border:1px solid var(--gborder2)}
+.btn-emerald-outline:hover{background:rgba(38,161,123,.07);border-color:var(--emerald)}
+
+/* LOGO SVG */
+.logo-svg-wrap{width:42px;height:42px;flex-shrink:0}
+
+/* NAV */
+.nav{background:rgba(10,10,8,.95);backdrop-filter:blur(32px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.logo-text{font-family:var(--display);font-weight:700;font-size:1.4rem;letter-spacing:.02em;background:linear-gradient(135deg,var(--gold4),var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.logo-sub{font-family:var(--font);font-size:.52rem;color:var(--text3);letter-spacing:.12em;text-transform:uppercase;margin-top:-3px}
+.nav-links{display:flex;align-items:center;gap:.1rem}
+.nav-links a{color:rgba(245,240,232,.3);font-family:var(--font);font-size:.6rem;font-weight:700;padding:.45rem .9rem;border-radius:4px;transition:.2s;letter-spacing:.08em;text-transform:uppercase}
+.nav-links a:hover{color:var(--gold);background:rgba(212,168,67,.05)}
+.nav-cta{display:flex;align-items:center;gap:.75rem}
+.live-badge{display:flex;align-items:center;gap:6px;font-size:.6rem;color:rgba(245,240,232,.28);font-family:var(--font);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--emerald);animation:pulse 2s infinite;flex-shrink:0}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:none;border:none}
+.nav-hamburger span{width:22px;height:2px;background:var(--text);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;background:var(--void2);border-top:1px solid var(--border);padding:1rem 2rem 1.5rem}
+.mobile-nav a{display:block;color:rgba(245,240,232,.3);padding:.6rem 0;font-size:.82rem;border-bottom:1px solid var(--border);font-family:var(--font);letter-spacing:.04em}
+.mobile-nav a:hover{color:var(--gold)}
+
+/* NOTICE BAR */
+.notice-bar{background:linear-gradient(90deg,rgba(212,168,67,.08),rgba(38,161,123,.06),rgba(212,168,67,.08));border-bottom:1px solid rgba(212,168,67,.15);padding:.5rem 2rem;text-align:center;font-size:.72rem;color:rgba(212,168,67,.75);font-weight:700;letter-spacing:.02em;position:relative;z-index:1;font-family:var(--font)}
+.notice-bar a{color:var(--emerald4);text-decoration:underline}
+.notice-bar strong{color:var(--gold)}
+
+/* TICKER */
+.ticker-bar{background:var(--void2);border-bottom:1px solid var(--border);overflow:hidden;height:32px;display:flex;align-items:center}
+.ticker-inner{display:flex;gap:3rem;animation:ticker 35s linear infinite;white-space:nowrap;font-family:var(--font);font-size:.58rem;font-weight:700;letter-spacing:.06em;color:var(--text3)}
+.ticker-item{display:flex;align-items:center;gap:.5rem}
+.ticker-item .pair{color:var(--text2)}
+.ticker-item .up{color:var(--emerald4)}
+.ticker-item .dn{color:#FF6B6B}
+.ticker-gold{color:var(--gold)}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;padding:5rem 0 3rem;min-height:95vh;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;pointer-events:none}
+.orb-gold{position:absolute;top:-10%;right:-5%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.08) 0%,transparent 65%)}
+.orb-emerald{position:absolute;bottom:-15%;left:-5%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(38,161,123,.06) 0%,transparent 65%)}
+.orb-center{position:absolute;top:45%;left:40%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.04) 0%,transparent 60%)}
+
+/* Gold bar decoration */
+.gold-bar-deco{position:absolute;right:8%;top:12%;opacity:.06;transform:rotate(15deg)}
+
+.hero-grid{display:grid;grid-template-columns:1fr 480px;gap:5rem;align-items:center;width:100%}
+.hero-eyebrow-row{display:flex;align-items:center;gap:.75rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.chain-badge{background:rgba(212,168,67,.06);border:1px solid var(--border2);border-radius:4px;padding:.22rem .8rem;font-family:var(--font);font-size:.58rem;font-weight:700;letter-spacing:.1em;color:var(--gold);text-transform:uppercase}
+.chain-badge.tron{background:rgba(38,161,123,.06);border-color:var(--gborder2);color:var(--emerald4)}
+.hero h1{margin-bottom:1.2rem}
+.hero-sub{color:rgba(245,240,232,.4);font-size:1.05rem;max-width:520px;line-height:1.85;margin-bottom:2.5rem;font-family:var(--body)}
+.hero-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:3rem}
+.hero-trust{display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:.5rem;font-size:.72rem;color:rgba(245,240,232,.28);font-family:var(--font);font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.trust-icon{width:16px;height:16px;border-radius:3px;border:1px solid rgba(38,161,123,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.55rem;color:var(--emerald)}
+
+/* WIDGET CARD */
+.hero-widget{background:rgba(15,15,12,.95);border:1px solid var(--border2);border-radius:var(--radius-xl);overflow:hidden;backdrop-filter:blur(24px);box-shadow:var(--shadow-lg),0 0 80px rgba(212,168,67,.06);animation:float 7s ease-in-out infinite;position:relative}
+.hero-widget::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),var(--emerald4),var(--gold),transparent)}
+.widget-tabs{display:flex;border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none}
+.widget-tabs::-webkit-scrollbar{display:none}
+.wtab{flex:1;min-width:56px;padding:.75rem .4rem;font-family:var(--font);font-size:.55rem;font-weight:700;letter-spacing:.06em;color:rgba(245,240,232,.25);background:none;border:none;cursor:pointer;transition:.2s;text-transform:uppercase;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.wtab:hover{color:var(--gold)}
+.wtab.active{color:var(--gold);border-bottom-color:var(--gold);background:rgba(212,168,67,.04)}
+.widget-body{padding:1.6rem}
+
+.widget-field{margin-bottom:.9rem}
+.wf-label{font-size:.58rem;color:rgba(212,168,67,.4);text-transform:uppercase;letter-spacing:.14em;font-family:var(--font);font-weight:700;margin-bottom:.4rem;display:flex;justify-content:space-between}
+.wf-balance{color:rgba(245,240,232,.3);font-size:.58rem}
+.wf-input-row{display:flex;gap:8px;align-items:center}
+.wf-input{flex:1;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:8px;padding:.8rem 1rem;color:var(--text);font-family:var(--body);font-size:.95rem;outline:none;transition:.2s}
+.wf-input:focus{border-color:rgba(212,168,67,.4);background:rgba(212,168,67,.03)}
+.wf-input::placeholder{color:rgba(245,240,232,.15);font-size:.85rem}
+.wf-max{font-family:var(--font);font-size:.52rem;font-weight:700;letter-spacing:.1em;color:var(--emerald);padding:.2rem .5rem;border:1px solid var(--gborder2);border-radius:3px;cursor:pointer;transition:.2s;background:transparent;text-transform:uppercase}
+.wf-max:hover{background:rgba(38,161,123,.1)}
+.token-sel{background:rgba(212,168,67,.07);border:1px solid var(--border2);border-radius:8px;padding:.5rem .9rem;font-family:var(--font);font-size:.62rem;font-weight:700;color:var(--gold);letter-spacing:.06em;white-space:nowrap;cursor:pointer;transition:.2s;display:flex;align-items:center;gap:.4rem}
+.token-sel:hover{background:rgba(212,168,67,.14);border-color:var(--border3)}
+.token-sel.xaut{background:rgba(212,168,67,.1);border-color:rgba(212,168,67,.35);color:var(--gold4)}
+.token-sel.usdt{background:rgba(38,161,123,.08);border-color:var(--gborder2);color:var(--emerald4)}
+
+.swap-arrow{display:flex;justify-content:center;margin:.6rem 0}
+.swap-arrow-btn{width:36px;height:36px;border-radius:8px;background:rgba(212,168,67,.08);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1rem;cursor:pointer;transition:.3s}
+.swap-arrow-btn:hover{background:rgba(212,168,67,.18);transform:rotate(180deg);border-color:var(--border3)}
+
+.wf-rate{display:flex;justify-content:space-between;font-size:.68rem;color:var(--text3);padding:.5rem 0;border-top:1px solid var(--border);margin-bottom:.5rem;font-family:var(--font)}
+.wf-rate span:last-child{color:var(--gold)}
+.wf-details{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:8px;padding:.75rem;margin-bottom:.9rem}
+.wf-detail-row{display:flex;justify-content:space-between;font-family:var(--font);font-size:.6rem;color:var(--text3);padding:.22rem 0}
+.wf-detail-row span:last-child{color:var(--text2)}
+.wf-detail-row.highlight span:last-child{color:var(--emerald4)}
+
+.widget-cta{display:block;width:100%;padding:.9rem;border-radius:8px;background:linear-gradient(135deg,var(--gold2),var(--gold),var(--gold4));color:#0A0A08;font-family:var(--font);font-weight:800;font-size:.68rem;letter-spacing:.12em;text-align:center;border:none;cursor:pointer;transition:.2s;text-transform:uppercase}
+.widget-cta:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(212,168,67,.35)}
+
+.widget-footer{display:flex;justify-content:space-between;align-items:center;padding-top:.9rem;border-top:1px solid var(--border);margin-top:.85rem}
+.wf-stat{text-align:center}
+.wf-stat-v{font-family:var(--font);font-weight:700;font-size:.88rem;color:var(--text)}
+.wf-stat-v.gold{color:var(--gold)}
+.wf-stat-v.green{color:var(--emerald4)}
+.wf-stat-l{font-size:.55rem;color:rgba(212,168,67,.3);text-transform:uppercase;letter-spacing:.1em;font-family:var(--font);margin-top:.1rem}
+
+/* STATS BAND */
+.stats-band{background:var(--void2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-col{padding:2.5rem 2rem;text-align:center;border-right:1px solid var(--border);position:relative}
+.stat-col:last-child{border-right:none}
+.stat-col::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
+.stat-number{font-family:var(--display);font-size:2.6rem;font-weight:700;letter-spacing:-.03em;display:block;line-height:1}
+.stat-number.gold{color:var(--gold)}
+.stat-number.emerald{color:var(--emerald4)}
+.stat-number.white{color:var(--text)}
+.stat-label{font-family:var(--font);font-size:.6rem;color:rgba(212,168,67,.28);text-transform:uppercase;letter-spacing:.12em;margin-top:.5rem;font-weight:700}
+.stat-sub{font-size:.66rem;color:rgba(212,168,67,.15);margin-top:.2rem;font-family:var(--font)}
+
+/* PRODUCTS */
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
+.product-card{border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem;background:rgba(255,255,255,.015);transition:.35s;position:relative;overflow:hidden;cursor:pointer}
+.product-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;opacity:0;transition:.3s}
+.product-card:hover::before{opacity:1}
+.product-card.gold-c::before{background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.product-card.emerald-c::before{background:linear-gradient(90deg,transparent,var(--emerald4),transparent)}
+.product-card:hover{transform:translateY(-5px);border-color:var(--border2);box-shadow:var(--glow-gold)}
+.product-card.emerald-c:hover{box-shadow:var(--glow-emerald)}
+.pc-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.25rem;flex-shrink:0}
+.pc-icon.gold-i{background:rgba(212,168,67,.08);border:1px solid var(--border2)}
+.pc-icon.emerald-i{background:rgba(38,161,123,.08);border:1px solid var(--gborder2)}
+.pc-tag{font-family:var(--font);font-size:.55rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.2rem .6rem;border-radius:3px;margin-bottom:.8rem;display:inline-block}
+.pc-tag.gold-t{background:rgba(212,168,67,.07);color:var(--gold);border:1px solid var(--border2)}
+.pc-tag.emerald-t{background:rgba(38,161,123,.07);color:var(--emerald4);border:1px solid var(--gborder2)}
+.product-card h3{font-size:1rem;color:var(--text);margin-bottom:.55rem}
+.product-card p{font-size:.85rem;color:var(--text2);line-height:1.78;margin-bottom:1.25rem}
+.pc-link{font-family:var(--font);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:.4rem;color:var(--gold)}
+.pc-link.emerald-l{color:var(--emerald4)}
+
+/* XAUT HIGHLIGHT */
+.xaut-section{background:var(--void2)}
+.xaut-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:3.5rem}
+.xaut-visual{position:relative;display:flex;align-items:center;justify-content:center}
+.gold-bars-svg{filter:drop-shadow(0 20px 60px rgba(212,168,67,.3))}
+.xaut-info{display:flex;flex-direction:column;gap:1.25rem}
+.xaut-stat-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.xaut-stat{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem}
+.xaut-stat-val{font-family:var(--display);font-size:1.6rem;font-weight:700;color:var(--gold);line-height:1}
+.xaut-stat-lbl{font-family:var(--font);font-size:.58rem;color:var(--text3);text-transform:uppercase;letter-spacing:.12em;margin-top:.3rem}
+
+/* POOL/APY TABLE */
+.apy-section{background:var(--void3)}
+.apy-table{border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+.apy-thead{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;background:rgba(212,168,67,.04);border-bottom:1px solid var(--border)}
+.apy-th{padding:.85rem 1rem;font-family:var(--font);font-size:.58rem;font-weight:700;letter-spacing:.1em;color:rgba(212,168,67,.32);text-transform:uppercase}
+.apy-row{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;border-bottom:1px solid var(--border);transition:.2s}
+.apy-row:last-child{border-bottom:none}
+.apy-row:hover{background:rgba(212,168,67,.025)}
+.apy-td{padding:.9rem 1rem;font-size:.82rem;color:var(--text2);display:flex;align-items:center;gap:.5rem}
+.apy-td:first-child{color:var(--text);font-weight:500}
+.token-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0}
+.apy-val{font-family:var(--font);font-weight:700;font-size:.82rem}
+.apy-val.hot{color:var(--gold4)}
+.apy-val.warm{color:var(--gold)}
+.apy-val.cool{color:var(--emerald4)}
+.badge-pool{font-family:var(--font);font-size:.55rem;font-weight:700;padding:.18rem .5rem;border-radius:3px;letter-spacing:.06em}
+.badge-pool.live{background:rgba(38,161,123,.07);color:var(--emerald4);border:1px solid rgba(38,161,123,.2)}
+.badge-pool.new{background:rgba(212,168,67,.07);color:var(--gold);border:1px solid var(--border2)}
+.badge-pool.hot{background:rgba(255,228,138,.07);color:var(--gold4);border:1px solid rgba(255,228,138,.2)}
+
+/* STAKING HIGHLIGHT */
+.stake-highlight{background:rgba(255,255,255,.015);border:1px solid var(--border2);border-radius:var(--radius-xl);padding:2rem;position:relative;overflow:hidden;animation:borderGlow 4s ease-in-out infinite}
+.stake-highlight::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),var(--emerald4),var(--gold),transparent)}
+.sh-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem}
+.sh-apy{font-family:var(--display);font-weight:700;font-size:2.8rem;letter-spacing:-.04em}
+.sh-apy span{font-size:1rem;color:var(--text3);font-weight:400}
+.sh-pools{display:flex;flex-direction:column;gap:.65rem;margin-bottom:1.5rem}
+.sh-pool{background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:var(--radius);padding:.8rem 1rem;display:flex;justify-content:space-between;align-items:center;transition:.2s;cursor:pointer}
+.sh-pool:hover{border-color:var(--border2);background:rgba(212,168,67,.03)}
+.sh-pool.featured{border-color:rgba(212,168,67,.25);background:rgba(212,168,67,.04)}
+.sh-pool-name{font-family:var(--display);font-size:.88rem;font-weight:600;color:var(--text)}
+.sh-pool-sub{font-size:.68rem;color:var(--text3);margin-top:.1rem;font-family:var(--font)}
+.sh-pool-apy{font-family:var(--font);font-weight:700;font-size:.88rem;color:var(--gold4)}
+
+/* HOW IT WORKS */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3.5rem;position:relative}
+.steps-connector{position:absolute;top:30px;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--border2) 20%,var(--border2) 80%,transparent)}
+.step{text-align:center;position:relative;z-index:1}
+.step-num{width:60px;height:60px;border-radius:12px;background:var(--void);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.4rem;font-weight:700;color:var(--gold);margin:0 auto 1.25rem;box-shadow:0 0 20px rgba(212,168,67,.08)}
+.step h3{font-size:.9rem;margin-bottom:.45rem;color:var(--text)}
+.step p{font-size:.82rem;color:var(--text2);line-height:1.72}
+
+/* CREDIT SECTION */
+.credit-section{background:var(--void2)}
+.credit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
+.credit-card{border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;background:rgba(255,255,255,.015);position:relative;overflow:hidden;transition:.3s}
+.credit-card:hover{border-color:var(--border2);transform:translateY(-3px)}
+.credit-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border2),transparent)}
+.credit-card h3{font-size:.95rem;color:var(--text);margin-bottom:.5rem}
+.credit-card p{font-size:.82rem;color:var(--text2);line-height:1.72}
+.credit-badge{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--font);font-size:.58rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .7rem;border-radius:4px;margin-bottom:.9rem}
+.credit-badge.gold-b{background:rgba(212,168,67,.07);color:var(--gold);border:1px solid var(--border2)}
+.credit-badge.emerald-b{background:rgba(38,161,123,.07);color:var(--emerald4);border:1px solid var(--gborder2)}
+
+/* ROADMAP */
+.rm-track{margin-top:3rem;position:relative;padding-left:2rem}
+.rm-track::before{content:'';position:absolute;left:0;top:28px;bottom:28px;width:1px;background:linear-gradient(180deg,var(--gold),var(--emerald),rgba(212,168,67,.1))}
+.rm-item{position:relative;padding-left:2.5rem;padding-bottom:2.5rem}
+.rm-item:last-child{padding-bottom:0}
+.rm-dot{position:absolute;left:-2.55rem;top:6px;width:14px;height:14px;border-radius:3px;border:1px solid}
+.rm-dot.done{border-color:var(--emerald4);background:var(--emerald4);box-shadow:0 0 10px rgba(38,161,123,.4)}
+.rm-dot.active{border-color:var(--gold);background:rgba(212,168,67,.15);box-shadow:0 0 10px rgba(212,168,67,.3);animation:pulse 2s infinite}
+.rm-dot.upcoming{border-color:var(--border2);background:var(--void2)}
+.rm-quarter{font-family:var(--font);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem;color:var(--text3)}
+.rm-dot.done~.rm-content .rm-quarter{color:var(--emerald4)}
+.rm-dot.active~.rm-content .rm-quarter{color:var(--gold)}
+.rm-item h3{font-size:.95rem;color:var(--text);margin-bottom:.4rem}
+.rm-item p{font-size:.82rem;color:var(--text2);line-height:1.72}
+.rm-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.6rem}
+.rm-tag{font-size:.58rem;font-family:var(--font);font-weight:700;padding:.18rem .55rem;border-radius:3px;letter-spacing:.06em;border:1px solid}
+.rm-tag.done{background:rgba(38,161,123,.06);color:var(--emerald4);border-color:rgba(38,161,123,.2)}
+.rm-tag.active{background:rgba(212,168,67,.06);color:var(--gold);border-color:var(--border2)}
+.rm-tag.up{background:rgba(212,168,67,.04);color:var(--text3);border-color:var(--border)}
+
+/* SECURITY */
+.sec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
+.sec-card{border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;background:rgba(255,255,255,.015)}
+.sec-card h3{font-size:.95rem;color:var(--text);margin-bottom:.5rem}
+.sec-card p{font-size:.82rem;color:var(--text2);line-height:1.72}
+
+/* FAQ */
+.faq-section{background:var(--void3)}
+.faq-wrap{max-width:880px;margin:3.5rem auto 0}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-trigger{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 0;gap:1rem;width:100%;background:none;border:none;cursor:pointer;text-align:left}
+.faq-q{font-family:var(--display);font-size:.98rem;font-weight:600;color:var(--text);flex:1;line-height:1.4}
+.faq-item.open .faq-q{color:var(--gold)}
+.faq-icon{width:26px;height:26px;border-radius:4px;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--text3);transition:.3s;font-size:.9rem;font-family:var(--font)}
+.faq-item.open .faq-icon{transform:rotate(45deg);border-color:var(--gold);color:var(--gold);background:rgba(212,168,67,.06)}
+.faq-answer{font-size:.87rem;color:var(--text2);line-height:1.82;max-height:0;overflow:hidden;transition:.35s ease;padding-bottom:0}
+.faq-item.open .faq-answer{max-height:900px;padding-bottom:1.25rem}
+
+/* CTA BANNER */
+.cta-banner{background:linear-gradient(135deg,var(--void3),var(--void4));border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:6rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:800px;height:500px;background:radial-gradient(ellipse,rgba(212,168,67,.07) 0%,transparent 65%);pointer-events:none}
+.cta-banner h2{margin-bottom:.75rem;position:relative;z-index:1}
+.cta-banner p{color:var(--text2);margin-bottom:2.5rem;position:relative;z-index:1}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+
+/* PARTNERS */
+.partners-row{display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin-top:2.5rem;opacity:.4}
+.partner-logo{font-family:var(--font);font-size:.65rem;font-weight:700;letter-spacing:.1em;color:var(--text3);text-transform:uppercase;padding:.45rem .95rem;border:1px solid var(--border);border-radius:4px;transition:.2s}
+.partner-logo:hover{border-color:var(--border2);color:var(--gold)}
+
+/* FOOTER */
+footer{background:var(--void2);border-top:1px solid var(--border);padding:4rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2.4fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand p{font-size:.82rem;color:rgba(245,240,232,.2);line-height:1.75;margin-top:.75rem;max-width:280px}
+.footer-col h4{font-family:var(--font);font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(212,168,67,.28);margin-bottom:1rem}
+.footer-col ul li{margin-bottom:.5rem}
+.footer-col ul a{font-size:.82rem;color:rgba(245,240,232,.2);transition:.2s}
+.footer-col ul a:hover{color:var(--gold)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:1.5rem;border-top:1px solid var(--border);flex-wrap:wrap;gap:.75rem}
+.footer-bottom p{font-size:.68rem;color:rgba(212,168,67,.15);font-family:var(--font)}
+.footer-badges{display:flex;gap:.5rem}
+.fbadge{background:rgba(212,168,67,.04);border:1px solid var(--border);border-radius:3px;padding:.2rem .6rem;font-size:.58rem;font-family:var(--font);font-weight:700;color:rgba(212,168,67,.25);letter-spacing:.08em;text-transform:uppercase}
+.social-links{display:flex;gap:.5rem;margin-top:1.25rem}
+.social-link{color:rgba(212,168,67,.25);border:1px solid var(--border);padding:.28rem .7rem;border-radius:4px;transition:.2s;font-family:var(--font);font-size:.6rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.social-link:hover{color:var(--gold);border-color:var(--border2)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:3rem}
+  .hero-widget{max-width:480px}
+  .products-grid{grid-template-columns:1fr 1fr}
+  .xaut-grid{grid-template-columns:1fr}
+  .steps-grid{grid-template-columns:1fr 1fr}
+  .steps-connector{display:none}
+  .sec-grid,.credit-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .section{padding:4rem 0}
+  h1{font-size:2.5rem}h2{font-size:2rem}
+  .nav-links,.nav-cta{display:none}
+  .nav-hamburger{display:flex}
+  .products-grid,.sec-grid,.credit-grid{grid-template-columns:1fr}
+  .steps-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .stats-inner{grid-template-columns:1fr 1fr}
+  .hero-actions{flex-direction:column;align-items:flex-start}
+  .rm-track{padding-left:1.25rem}
+  .xaut-grid{grid-template-columns:1fr}
+  .xaut-stat-row{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .container{padding:0 1.25rem}
+  h1{font-size:2rem}
+  .stats-inner{grid-template-columns:1fr}
+  .stat-col{border-right:none;border-bottom:1px solid var(--border)}
+  .apy-thead,.apy-row{grid-template-columns:2fr 1fr 1fr}
+  .apy-row>.apy-td:last-child,.apy-thead>.apy-th:last-child{display:none}
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="sr-only">Skip to main content</a>
+
+<!-- TICKER -->
+<div class="ticker-bar" aria-label="Live gold and crypto market data" role="marquee">
+  <div class="ticker-inner" id="ticker">
+    <span class="ticker-item"><span class="pair">XAUT/USDT</span> <span class="ticker-gold">$2,651.40</span> <span class="up">+0.42%</span></span>
+    <span class="ticker-item"><span class="pair">XAUT/TRX</span> <span class="ticker-gold">783,200 TRX</span> <span class="up">+1.1%</span></span>
+    <span class="ticker-item"><span class="pair">Gold Spot</span> <span class="ticker-gold">$2,648.80</span> <span class="up">+0.38%</span></span>
+    <span class="ticker-item"><span class="pair">USDT/TRX</span> <span>295.42</span> <span class="dn">-0.5%</span></span>
+    <span class="ticker-item"><span class="pair">XAUT/BTC</span> <span class="ticker-gold">0.03821</span> <span class="up">+0.9%</span></span>
+    <span class="ticker-item"><span class="pair">XAUT/ETH</span> <span class="ticker-gold">0.9812</span> <span class="up">+1.2%</span></span>
+    <span class="ticker-item"><span class="pair">TRX/USDT</span> <span>$0.2385</span> <span class="up">+2.1%</span></span>
+    <span class="ticker-item"><span class="pair">XAUT/USDT</span> <span class="ticker-gold">$2,651.40</span> <span class="up">+0.42%</span></span>
+    <span class="ticker-item"><span class="pair">XAUT/TRX</span> <span class="ticker-gold">783,200 TRX</span> <span class="up">+1.1%</span></span>
+    <span class="ticker-item"><span class="pair">Gold Spot</span> <span class="ticker-gold">$2,648.80</span> <span class="up">+0.38%</span></span>
+    <span class="ticker-item"><span class="pair">USDT/TRX</span> <span>295.42</span> <span class="dn">-0.5%</span></span>
+    <span class="ticker-item"><span class="pair">XAUT/BTC</span> <span class="ticker-gold">0.03821</span> <span class="up">+0.9%</span></span>
+    <span class="ticker-item"><span class="pair">XAUT/ETH</span> <span class="ticker-gold">0.9812</span> <span class="up">+1.2%</span></span>
+    <span class="ticker-item"><span class="pair">TRX/USDT</span> <span>$0.2385</span> <span class="up">+2.1%</span></span>
+  </div>
+</div>
+
+<!-- NOTICE BAR -->
+<div class="notice-bar xsudlmqvbag x2wl7trk" role="banner">
+  <strong>✦ Gold Rewards Season 2 Live:</strong> Earn up to 14% APY on XAUT staking pools. <a href="#staking" class="xsudlmqvbag x2wl7trk">Start earning →</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo xsudlmqvbag x2wl7trk" href="/" aria-label="XAUT-Swap Homepage">
+        <!-- Logo SVG: Gold bar with emerald gem -->
+        <svg class="logo-svg-wrap" width="42" height="42" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#0A0A08"/>
+          <defs>
+            <linearGradient id="gold-lg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFE08A"/>
+              <stop offset="50%" stop-color="#D4A843"/>
+              <stop offset="100%" stop-color="#B8860B"/>
+            </linearGradient>
+            <linearGradient id="em-lg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4ECBA0"/>
+              <stop offset="100%" stop-color="#26A17B"/>
+            </linearGradient>
+          </defs>
+          <!-- Gold bar base -->
+          <rect x="8" y="28" width="48" height="22" rx="4" fill="url(#gold-lg)"/>
+          <!-- Gold bar top -->
+          <rect x="14" y="22" width="36" height="10" rx="3" fill="url(#gold-lg)" opacity=".8"/>
+          <!-- Shine lines -->
+          <rect x="10" y="33" width="44" height="1.5" rx="1" fill="#B8860B" opacity=".35"/>
+          <rect x="10" y="39" width="44" height="1.5" rx="1" fill="#B8860B" opacity=".35"/>
+          <!-- XAUT text on bar -->
+          <text x="32" y="37" font-family="monospace" font-size="7" font-weight="700" fill="#0A0A08" text-anchor="middle" opacity=".7">XAUT</text>
+          <!-- Emerald gem top right -->
+          <polygon points="52,6 58,14 52,22 46,14" fill="url(#em-lg)" opacity=".95"/>
+          <polygon points="52,9 56,14 52,19 48,14" fill="#fff" opacity=".2"/>
+        </svg>
+        <div>
+          <div class="logo-text">XAUT-Swap</div>
+          <div class="logo-sub">Digital Gold · TRON Network</div>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#products" class="xsudlmqvbag x2wl7trk">Trade</a></li>
+        <li><a href="#xaut-info" class="xsudlmqvbag x2wl7trk">XAUT</a></li>
+        <li><a href="#pools" class="xsudlmqvbag x2wl7trk">Pools</a></li>
+        <li><a href="#staking" class="xsudlmqvbag x2wl7trk">Staking</a></li>
+        <li><a href="#credit" class="xsudlmqvbag x2wl7trk">Credit</a></li>
+        <li><a href="#faq" class="xsudlmqvbag x2wl7trk">FAQ</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <div class="live-badge">
+          <div class="live-dot"></div>
+          TRON Live
+        </div>
+        <a href="#app" class="btn btn-outline xsudlmqvbag x2wl7trk" style="padding:.48rem 1.1rem;font-size:.6rem;border-radius:5px">
+          Connect Wallet
+        </a>
+        <a href="#app" class="btn btn-gold xsudlmqvbag x2wl7trk" style="padding:.52rem 1.3rem;font-size:.6rem;border-radius:5px">
+          Launch App →
+        </a>
+      </div>
+
+      <button class="nav-hamburger xsudlmqvbag x2wl7trk" onclick="toggleMobile()" aria-label="Toggle menu" aria-expanded="false" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav" role="menu">
+    <a href="#products" onclick="toggleMobile()" class="xsudlmqvbag x2wl7trk">Trade</a>
+    <a href="#xaut-info" onclick="toggleMobile()" class="xsudlmqvbag x2wl7trk">XAUT</a>
+    <a href="#pools" onclick="toggleMobile()" class="xsudlmqvbag x2wl7trk">Pools</a>
+    <a href="#staking" onclick="toggleMobile()" class="xsudlmqvbag x2wl7trk">Staking</a>
+    <a href="#credit" onclick="toggleMobile()" class="xsudlmqvbag x2wl7trk">Credit</a>
+    <a href="#faq" onclick="toggleMobile()" class="xsudlmqvbag x2wl7trk">FAQ</a>
+    <div style="padding-top:1rem;display:flex;flex-direction:column;gap:.5rem">
+      <a href="#app" class="btn btn-outline xsudlmqvbag x2wl7trk btn-full" onclick="toggleMobile()">Connect Wallet</a>
+      <a href="#app" class="btn btn-gold xsudlmqvbag x2wl7trk btn-full" onclick="toggleMobile()">Launch App →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main id="main-content">
+<header class="hero" role="banner">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="orb-gold"></div>
+    <div class="orb-emerald"></div>
+    <div class="orb-center"></div>
+    <!-- Gold bar decorative SVG -->
+    <svg class="gold-bar-deco" width="300" height="300" viewBox="0 0 300 300" fill="none" aria-hidden="true">
+      <rect x="40" y="100" width="220" height="100" rx="12" fill="url(#gb-deco)" opacity=".6"/>
+      <rect x="70" y="75" width="160" height="40" rx="8" fill="url(#gb-deco)" opacity=".4"/>
+      <rect x="40" y="125" width="220" height="3" fill="#B8860B" opacity=".3"/>
+      <rect x="40" y="145" width="220" height="3" fill="#B8860B" opacity=".3"/>
+      <defs><linearGradient id="gb-deco" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFE08A"/><stop offset="100%" stop-color="#B8860B"/></linearGradient></defs>
+    </svg>
+  </div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-eyebrow-row">
+          <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Live on TRON Mainnet</div>
+          <div class="chain-badge">TRON Network</div>
+          <div class="chain-badge tron">3s Settlement</div>
+        </div>
+        <h1>
+          Swap <span class="grad-gold">Digital Gold</span><br>
+          on TRON — Backed<br>
+          by <em>Physical Gold</em>
+        </h1>
+        <p class="hero-sub">
+          XAUT-Swap is the premier DeFi protocol for tokenized gold on TRON. Swap XAUT with near-zero fees, earn gold rewards, provide liquidity and unlock gold-backed credit — all in one institutional-grade platform.
+        </p>
+        <div class="hero-actions">
+          <a href="#app" class="btn btn-gold btn-lg xsudlmqvbag x2wl7trk">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Swap XAUT Now
+          </a>
+          <a href="#products" class="btn btn-outline btn-lg xsudlmqvbag x2wl7trk">
+            Explore Protocol →
+          </a>
+          <a href="#staking" class="btn btn-emerald-outline btn-lg xsudlmqvbag x2wl7trk">
+            Earn Gold Rewards
+          </a>
+        </div>
+        <div class="hero-trust" role="list" aria-label="Trust indicators">
+          <div class="trust-item" role="listitem"><div class="trust-icon" aria-hidden="true">✓</div>Audited</div>
+          <div class="trust-item" role="listitem"><div class="trust-icon" aria-hidden="true">✓</div>Non-Custodial</div>
+          <div class="trust-item" role="listitem"><div class="trust-icon" aria-hidden="true">✓</div>Gold-Backed</div>
+          <div class="trust-item" role="listitem"><div class="trust-icon" aria-hidden="true">✓</div>Open Source</div>
+        </div>
+      </div>
+
+      <!-- MAIN WIDGET -->
+      <div class="hero-widget" aria-label="XAUT-Swap trading widget">
+        <div class="widget-tabs" role="tablist">
+          <button class="wtab active xsudlmqvbag x2wl7trk" onclick="switchTab(this,'swap')" role="tab" aria-selected="true">Swap</button>
+          <button class="wtab xsudlmqvbag x2wl7trk" onclick="switchTab(this,'pool')" role="tab" aria-selected="false">Pool</button>
+          <button class="wtab xsudlmqvbag x2wl7trk" onclick="switchTab(this,'staking')" role="tab" aria-selected="false">Staking</button>
+          <button class="wtab xsudlmqvbag x2wl7trk" onclick="switchTab(this,'credit')" role="tab" aria-selected="false">Credit</button>
+          <button class="wtab xsudlmqvbag x2wl7trk" onclick="switchTab(this,'rewards')" role="tab" aria-selected="false">Rewards</button>
+        </div>
+        <div class="widget-body" id="widgetBody">
+
+          <!-- SWAP TAB -->
+          <div id="tab-swap">
+            <div class="widget-field">
+              <div class="wf-label">
+                <span>From</span>
+                <span class="wf-balance">Balance: 12,450.00 USDT</span>
+              </div>
+              <div class="wf-input-row">
+                <input class="wf-input" type="number" placeholder="0.00" id="swapFrom" oninput="updateSwap()">
+                <button class="wf-max xsudlmqvbag x2wl7trk">MAX</button>
+                <button class="token-sel usdt xsudlmqvbag x2wl7trk">💵 USDT ▾</button>
+              </div>
+            </div>
+            <div class="swap-arrow">
+              <button class="swap-arrow-btn xsudlmqvbag x2wl7trk" onclick="flipSwap()" aria-label="Flip tokens">⇅</button>
+            </div>
+            <div class="widget-field">
+              <div class="wf-label">
+                <span>To — Digital Gold</span>
+                <span class="wf-balance">Balance: 0.0000 XAUT</span>
+              </div>
+              <div class="wf-input-row">
+                <input class="wf-input" type="number" placeholder="0.0000" id="swapTo" readonly>
+                <button class="token-sel xaut xsudlmqvbag x2wl7trk">🥇 XAUT ▾</button>
+              </div>
+            </div>
+            <div class="wf-rate"><span>Exchange Rate</span><span>1 XAUT = <span id="swapRate">$2,651.40</span></span></div>
+            <div class="wf-details">
+              <div class="wf-detail-row"><span>Network (TRON)</span><span>~$0.001</span></div>
+              <div class="wf-detail-row"><span>Protocol Fee (0.1%)</span><span id="feeAmt">—</span></div>
+              <div class="wf-detail-row"><span>Slippage Tolerance</span><span>0.5%</span></div>
+              <div class="wf-detail-row"><span>Route</span><span>USDT → XAUT Direct</span></div>
+              <div class="wf-detail-row highlight"><span>Minimum Received</span><span id="minReceived">—</span></div>
+            </div>
+            <button class="widget-cta xsudlmqvbag x2wl7trk">Connect Wallet to Swap Gold</button>
+          </div>
+
+          <!-- POOL TAB -->
+          <div id="tab-pool" style="display:none">
+            <div class="widget-field">
+              <div class="wf-label">Token A — XAUT</div>
+              <div class="wf-input-row">
+                <input class="wf-input" type="number" placeholder="0.0000 XAUT">
+                <button class="token-sel xaut xsudlmqvbag x2wl7trk">🥇 XAUT ▾</button>
+              </div>
+            </div>
+            <div class="widget-field" style="margin-top:.75rem">
+              <div class="wf-label">Token B</div>
+              <div class="wf-input-row">
+                <input class="wf-input" type="number" placeholder="0.00 USDT">
+                <button class="token-sel usdt xsudlmqvbag x2wl7trk">💵 USDT ▾</button>
+              </div>
+            </div>
+            <div class="wf-rate"><span>Pool APY (XAUT/USDT)</span><span>8.4% — 12.6%</span></div>
+            <div class="wf-rate" style="margin-top:-.4rem"><span>Your share estimate</span><span>—</span></div>
+            <button class="widget-cta xsudlmqvbag x2wl7trk" style="background:linear-gradient(135deg,var(--emerald3),var(--emerald));color:#fff">Add Liquidity →</button>
+          </div>
+
+          <!-- STAKING TAB -->
+          <div id="tab-staking" style="display:none">
+            <div class="widget-field">
+              <div class="wf-label">Stake XAUT Amount</div>
+              <div class="wf-input-row">
+                <input class="wf-input" type="number" placeholder="0.0000 XAUT">
+                <button class="wf-max xsudlmqvbag x2wl7trk">MAX</button>
+                <button class="token-sel xaut xsudlmqvbag x2wl7trk">🥇 XAUT ▾</button>
+              </div>
+            </div>
+            <div class="widget-field" style="margin-top:.75rem">
+              <div class="wf-label">Lock Period</div>
+              <div style="display:flex;gap:.4rem">
+                <button class="token-sel xsudlmqvbag x2wl7trk" style="flex:1;text-align:center;font-size:.55rem">Flexible</button>
+                <button class="token-sel xaut xsudlmqvbag x2wl7trk" style="flex:1;text-align:center;font-size:.55rem">30 Days</button>
+                <button class="token-sel xsudlmqvbag x2wl7trk" style="flex:1;text-align:center;font-size:.55rem">90 Days</button>
+              </div>
+            </div>
+            <div class="wf-rate"><span>Estimated APY</span><span>9.8% APY in XAUT</span></div>
+            <div class="wf-rate" style="margin-top:-.4rem"><span>Rewards in</span><span>Physical Gold (XAUT)</span></div>
+            <button class="widget-cta xsudlmqvbag x2wl7trk">Stake XAUT — Earn Gold →</button>
+          </div>
+
+          <!-- CREDIT TAB -->
+          <div id="tab-credit" style="display:none">
+            <div class="widget-field">
+              <div class="wf-label">Collateral — XAUT</div>
+              <div class="wf-input-row">
+                <input class="wf-input" type="number" placeholder="0.0000 XAUT">
+                <button class="token-sel xaut xsudlmqvbag x2wl7trk">🥇 XAUT ▾</button>
+              </div>
+            </div>
+            <div class="widget-field" style="margin-top:.75rem">
+              <div class="wf-label">Borrow Asset</div>
+              <div class="wf-input-row">
+                <input class="wf-input" type="number" placeholder="Max borrowable USDT">
+                <button class="token-sel usdt xsudlmqvbag x2wl7trk">💵 USDT ▾</button>
+              </div>
+            </div>
+            <div class="wf-rate"><span>Max LTV (Gold-backed)</span><span>75% LTV</span></div>
+            <div class="wf-rate" style="margin-top:-.4rem"><span>Borrow APR</span><span style="color:var(--emerald4)">2.9% APR</span></div>
+            <button class="widget-cta xsudlmqvbag x2wl7trk" style="background:linear-gradient(135deg,var(--gold3),var(--gold2),var(--emerald3));color:#fff">Borrow Against Gold →</button>
+          </div>
+
+          <!-- REWARDS TAB -->
+          <div id="tab-rewards" style="display:none">
+            <div style="text-align:center;padding:1.2rem 0">
+              <div style="font-size:2rem;margin-bottom:.75rem">🥇</div>
+              <div style="font-family:var(--display);font-weight:700;font-size:1.1rem;color:var(--gold);margin-bottom:.5rem">Gold Rewards Dashboard</div>
+              <div style="font-size:.82rem;color:var(--text2);margin-bottom:1.25rem;line-height:1.75">Your staking and liquidity positions generate real gold rewards. All rewards paid in XAUT — backed by physical gold in Swiss vaults.</div>
+              <div class="wf-rate" style="border-color:var(--border2)"><span>Claimable Rewards</span><span style="color:var(--gold4)">0.0000 XAUT</span></div>
+              <div class="wf-rate" style="margin-top:-.3rem"><span>Total Earned (all time)</span><span>—</span></div>
+            </div>
+            <button class="widget-cta xsudlmqvbag x2wl7trk">Connect Wallet to View Rewards</button>
+          </div>
+
+          <div class="widget-footer">
+            <div class="wf-stat">
+              <div class="wf-stat-v gold">$180M+</div>
+              <div class="wf-stat-l">Gold TVL</div>
+            </div>
+            <div class="wf-stat">
+              <div class="wf-stat-v">$8.4M</div>
+              <div class="wf-stat-l">24h Volume</div>
+            </div>
+            <div class="wf-stat">
+              <div class="wf-stat-v green">Up to 14%</div>
+              <div class="wf-stat-l">Max APY</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- STATS -->
+<section class="stats-band" aria-label="Protocol statistics">
+  <div class="stats-inner container">
+    <div class="stat-col">
+      <span class="stat-number gold">$180M+</span>
+      <div class="stat-label">Total Gold Locked</div>
+      <div class="stat-sub">XAUT across all pools</div>
+    </div>
+    <div class="stat-col">
+      <span class="stat-number white">85K+</span>
+      <div class="stat-label">Active Gold Holders</div>
+      <div class="stat-sub">TRON wallets connected</div>
+    </div>
+    <div class="stat-col">
+      <span class="stat-number emerald">$2.1B+</span>
+      <div class="stat-label">All-Time Volume</div>
+      <div class="stat-sub">XAUT traded on TRON</div>
+    </div>
+    <div class="stat-col">
+      <span class="stat-number gold">Up to 14%</span>
+      <div class="stat-label">Max APY</div>
+      <div class="stat-sub">90-day XAUT gold vaults</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products" aria-labelledby="products-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Protocol Suite</div>
+    <h2 id="products-heading">Complete Gold DeFi,<br><span class="grad-mixed">built on TRON</span></h2>
+    <p class="lead" style="margin-top:.75rem">Four integrated products for tokenized gold — one seamless interface. Near-zero fees, 3-second finality, backed by physical gold in Swiss vaults.</p>
+    <div class="products-grid" role="list">
+
+      <article class="product-card gold-c" role="listitem">
+        <div class="pc-icon gold-i">🔄</div>
+        <div class="pc-tag gold-t">Swap</div>
+        <h3>XAUT Token Swap</h3>
+        <p>Swap USDT, TRX, USDD and other TRC20 tokens for XAUT with best-rate routing across XAUT-Swap pools. Lightning-fast settlement in 3 seconds on TRON with protocol fees under $0.01.</p>
+        <a href="#app" class="pc-link xsudlmqvbag x2wl7trk">Start Swapping Gold →</a>
+      </article>
+
+      <article class="product-card emerald-c" role="listitem">
+        <div class="pc-icon emerald-i">💧</div>
+        <div class="pc-tag emerald-t">Pool</div>
+        <h3>Gold Liquidity Pools</h3>
+        <p>Provide liquidity to XAUT/USDT, XAUT/TRX and XAUT/USDD pools. Earn trading fees plus XGS (gold swap) incentive rewards. Earn from institutional gold trading volume 24/7.</p>
+        <a href="#pools" class="pc-link emerald-l xsudlmqvbag x2wl7trk">Provide Liquidity →</a>
+      </article>
+
+      <article class="product-card gold-c" role="listitem">
+        <div class="pc-icon gold-i">🔐</div>
+        <div class="pc-tag gold-t">Staking</div>
+        <h3>XAUT Gold Staking</h3>
+        <p>Stake your XAUT and receive real gold yield paid directly in XAUT tokens. Flexible liquid staking with no lock-up or fixed-term gold vaults earning up to 14% APY. Your gold works for you.</p>
+        <a href="#staking" class="pc-link xsudlmqvbag x2wl7trk">Stake & Earn Gold →</a>
+      </article>
+
+      <article class="product-card emerald-c" role="listitem">
+        <div class="pc-icon emerald-i">🏦</div>
+        <div class="pc-tag emerald-t">Credit</div>
+        <h3>Gold-Backed Credit</h3>
+        <p>Borrow USDT, TRX and USDD against your XAUT gold collateral. The most capital-efficient gold-backed credit protocol on TRON — low 2.9% APR, no KYC, non-custodial positions.</p>
+        <a href="#credit" class="pc-link emerald-l xsudlmqvbag x2wl7trk">Access Credit →</a>
+      </article>
+
+      <article class="product-card gold-c" role="listitem">
+        <div class="pc-icon gold-i">🎁</div>
+        <div class="pc-tag gold-t">Gold Rewards</div>
+        <h3>Physical Gold Cashback</h3>
+        <p>Every swap, pool deposit and staking action earns XGS reward points redeemable for XAUT. Top-tier holders earn quarterly physical gold distributions from XAUT-Swap's vault allocations.</p>
+        <a href="#app" class="pc-link xsudlmqvbag x2wl7trk">View Rewards →</a>
+      </article>
+
+      <article class="product-card emerald-c" role="listitem">
+        <div class="pc-icon emerald-i">📊</div>
+        <div class="pc-tag emerald-t">Portfolio</div>
+        <h3>Gold Portfolio Dashboard</h3>
+        <p>Track your entire XAUT DeFi portfolio in one place — gold holdings, pool positions, staking rewards, credit lines and transaction history. Real-time gold price and P&L tracking.</p>
+        <a href="#app" class="pc-link emerald-l xsudlmqvbag x2wl7trk">Open Dashboard →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- XAUT INFO -->
+<section class="section xaut-section" id="xaut-info" aria-labelledby="xaut-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>About XAUT</div>
+    <h2 id="xaut-heading">Physical Gold.<br><span class="grad-gold">On-Chain. On TRON.</span></h2>
+    <div class="xaut-grid">
+      <div class="xaut-visual">
+        <!-- 3D Gold Bars SVG -->
+        <svg class="gold-bars-svg" width="380" height="300" viewBox="0 0 380 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bar1-top" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFE08A"/><stop offset="100%" stop-color="#C8973A"/></linearGradient>
+            <linearGradient id="bar1-side" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#8B6914"/><stop offset="100%" stop-color="#B8860B"/></linearGradient>
+            <linearGradient id="bar1-front" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#D4A843"/><stop offset="100%" stop-color="#A07820"/></linearGradient>
+            <linearGradient id="bar2-top" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFE08A"/><stop offset="100%" stop-color="#D4A843"/></linearGradient>
+            <linearGradient id="bar3-top" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFD060"/><stop offset="100%" stop-color="#B8860B"/></linearGradient>
+            <filter id="barShadow"><feDropShadow dx="0" dy="20" stdDeviation="15" flood-color="rgba(212,168,67,0.4)"/></filter>
+          </defs>
+          <!-- Back bar -->
+          <g opacity=".6" transform="translate(60,30)">
+            <polygon points="60,10 180,10 200,30 80,30" fill="url(#bar3-top)"/>
+            <polygon points="200,30 200,90 80,90 80,30" fill="url(#bar1-front)"/>
+            <polygon points="200,30 220,10 220,70 200,90" fill="url(#bar1-side)"/>
+            <text x="130" y="67" font-family="monospace" font-size="11" font-weight="700" fill="#0A0A08" text-anchor="middle" opacity=".6">XAUT</text>
+          </g>
+          <!-- Middle bar -->
+          <g opacity=".8" transform="translate(30,90)" filter="url(#barShadow)">
+            <polygon points="80,10 220,10 240,30 100,30" fill="url(#bar2-top)"/>
+            <polygon points="240,30 240,95 100,95 100,30" fill="url(#bar1-front)"/>
+            <polygon points="240,30 260,10 260,75 240,95" fill="url(#bar1-side)"/>
+            <line x1="100" y1="52" x2="240" y2="52" stroke="#8B6914" stroke-width="1.5" opacity=".4"/>
+            <line x1="100" y1="72" x2="240" y2="72" stroke="#8B6914" stroke-width="1.5" opacity=".4"/>
+            <text x="170" y="66" font-family="monospace" font-size="12" font-weight="700" fill="#0A0A08" text-anchor="middle" opacity=".7">XAUT</text>
+          </g>
+          <!-- Front bar (main) -->
+          <g transform="translate(0,160)" filter="url(#barShadow)">
+            <polygon points="90,10 250,10 275,35 115,35" fill="url(#bar1-top)"/>
+            <polygon points="275,35 275,105 115,105 115,35" fill="url(#bar1-front)"/>
+            <polygon points="275,35 300,10 300,80 275,105" fill="url(#bar1-side)"/>
+            <line x1="115" y1="58" x2="275" y2="58" stroke="#8B6914" stroke-width="2" opacity=".35"/>
+            <line x1="115" y1="80" x2="275" y2="80" stroke="#8B6914" stroke-width="2" opacity=".35"/>
+            <text x="195" y="76" font-family="monospace" font-size="14" font-weight="700" fill="#0A0A08" text-anchor="middle" opacity=".8">XAUT</text>
+            <text x="195" y="94" font-family="monospace" font-size="9" fill="#0A0A08" text-anchor="middle" opacity=".5">1 troy oz</text>
+          </g>
+          <!-- Emerald TRON badge -->
+          <circle cx="330" cy="60" r="36" fill="#0A0A08" stroke="rgba(38,161,123,.4)" stroke-width="1.5"/>
+          <text x="330" y="53" font-family="monospace" font-size="9" font-weight="700" fill="#26A17B" text-anchor="middle">TRON</text>
+          <text x="330" y="67" font-family="monospace" font-size="8" fill="#4ECBA0" text-anchor="middle">TRC20</text>
+          <text x="330" y="80" font-family="monospace" font-size="7" fill="#5A5448" text-anchor="middle">Network</text>
+        </svg>
+      </div>
+      <div>
+        <p style="color:var(--text2);font-size:.95rem;line-height:1.85;margin-bottom:2rem">
+          XAUT (Tether Gold) is a digital asset issued by Tether Operations Limited where each token represents one troy fine ounce of physical gold stored in Swiss vaults. On XAUT-Swap, XAUT trades natively as a TRC20 token on the TRON blockchain — combining gold's timeless store of value with blockchain's speed and transparency.
+        </p>
+        <div class="xaut-stat-row" style="margin-bottom:1.25rem">
+          <div class="xaut-stat">
+            <div class="xaut-stat-val">$2,651</div>
+            <div class="xaut-stat-lbl">Gold Price / XAUT</div>
+          </div>
+          <div class="xaut-stat">
+            <div class="xaut-stat-val" style="color:var(--emerald4)">+0.42%</div>
+            <div class="xaut-stat-lbl">24h Change</div>
+          </div>
+          <div class="xaut-stat">
+            <div class="xaut-stat-val">$680M+</div>
+            <div class="xaut-stat-lbl">Market Cap</div>
+          </div>
+          <div class="xaut-stat">
+            <div class="xaut-stat-val">1 oz</div>
+            <div class="xaut-stat-lbl">Physical Backing</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+          <a href="#app" class="btn btn-gold xsudlmqvbag x2wl7trk">Buy XAUT →</a>
+          <a href="#" class="btn btn-ghost xsudlmqvbag x2wl7trk">Tether Gold Docs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POOLS / APY -->
+<section class="section apy-section" id="pools" aria-labelledby="pools-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Gold Yield Opportunities</div>
+    <h2 id="pools-heading">Earn on your <span class="grad-gold">XAUT holdings</span></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem;align-items:start">
+      <div>
+        <div class="apy-table" role="table" aria-label="Current XAUT yield pools on XAUT-Swap">
+          <div class="apy-thead" role="row">
+            <div class="apy-th">Pool / Vault</div>
+            <div class="apy-th">APY</div>
+            <div class="apy-th">TVL</div>
+            <div class="apy-th">Status</div>
+          </div>
+          <div class="apy-row" role="row">
+            <div class="apy-td"><span class="token-dot" style="background:var(--gold)"></span>XAUT Liquid Staking</div>
+            <div class="apy-td apy-val warm">5.8%</div>
+            <div class="apy-td apy-val" style="color:var(--text2);font-size:.78rem">$62M</div>
+            <div class="apy-td"><span class="badge-pool live">Live</span></div>
+          </div>
+          <div class="apy-row" role="row">
+            <div class="apy-td"><span class="token-dot" style="background:var(--emerald)"></span>XAUT / USDT AMM</div>
+            <div class="apy-td apy-val hot">12.6%</div>
+            <div class="apy-td apy-val" style="color:var(--text2);font-size:.78rem">$44M</div>
+            <div class="apy-td"><span class="badge-pool hot">Hot</span></div>
+          </div>
+          <div class="apy-row" role="row">
+            <div class="apy-td"><span class="token-dot" style="background:var(--gold4)"></span>XAUT 90-Day Gold Vault</div>
+            <div class="apy-td apy-val hot">14%</div>
+            <div class="apy-td apy-val" style="color:var(--text2);font-size:.78rem">$31M</div>
+            <div class="apy-td"><span class="badge-pool new">New</span></div>
+          </div>
+          <div class="apy-row" role="row">
+            <div class="apy-td"><span class="token-dot" style="background:var(--emerald4)"></span>XAUT / TRX Pool</div>
+            <div class="apy-td apy-val cool">9.2%</div>
+            <div class="apy-td apy-val" style="color:var(--text2);font-size:.78rem">$18M</div>
+            <div class="apy-td"><span class="badge-pool live">Live</span></div>
+          </div>
+          <div class="apy-row" role="row">
+            <div class="apy-td"><span class="token-dot" style="background:#B8860B"></span>XAUT / USDD Stable</div>
+            <div class="apy-td apy-val cool">7.4%</div>
+            <div class="apy-td apy-val" style="color:var(--text2);font-size:.78rem">$14M</div>
+            <div class="apy-td"><span class="badge-pool live">Live</span></div>
+          </div>
+          <div class="apy-row" role="row">
+            <div class="apy-td"><span class="token-dot" style="background:#FFD060"></span>XGS Governance Vault</div>
+            <div class="apy-td apy-val hot">18%</div>
+            <div class="apy-td apy-val" style="color:var(--text2);font-size:.78rem">$9M</div>
+            <div class="apy-td"><span class="badge-pool new">New</span></div>
+          </div>
+          <div class="apy-row" role="row">
+            <div class="apy-td"><span class="token-dot" style="background:var(--text3)"></span>USDT Lending Reserve</div>
+            <div class="apy-td apy-val cool">4.9%</div>
+            <div class="apy-td apy-val" style="color:var(--text2);font-size:.78rem">$6M</div>
+            <div class="apy-td"><span class="badge-pool live">Live</span></div>
+          </div>
+        </div>
+        <a href="#app" class="btn btn-outline xsudlmqvbag x2wl7trk" style="margin-top:1.25rem">View All Gold Pools →</a>
+      </div>
+
+      <div class="stake-highlight" id="staking">
+        <div class="sh-header">
+          <div>
+            <div style="font-family:var(--font);font-size:.58rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.3rem">Featured Gold Vault</div>
+            <div style="font-family:var(--display);font-size:1rem;font-weight:700;color:var(--text)">XAUT 90-Day Gold Vault</div>
+          </div>
+          <div class="sh-apy"><span class="grad-gold">14%</span><span> APY</span></div>
+        </div>
+        <div class="sh-pools">
+          <div class="sh-pool">
+            <div>
+              <div class="sh-pool-name">Flexible Stake</div>
+              <div class="sh-pool-sub">Withdraw anytime · No lock</div>
+            </div>
+            <div class="sh-pool-apy" style="color:var(--emerald4)">5.8%</div>
+          </div>
+          <div class="sh-pool featured">
+            <div>
+              <div class="sh-pool-name">30-Day Gold Vault</div>
+              <div class="sh-pool-sub">Optimal for most holders</div>
+            </div>
+            <div class="sh-pool-apy">9.8%</div>
+          </div>
+          <div class="sh-pool">
+            <div>
+              <div class="sh-pool-name">90-Day Power Vault</div>
+              <div class="sh-pool-sub">Max gold yield + governance</div>
+            </div>
+            <div class="sh-pool-apy">14%</div>
+          </div>
+        </div>
+        <a href="#app" class="btn btn-gold xsudlmqvbag x2wl7trk btn-full">
+          Stake XAUT — Earn Gold Now →
+        </a>
+        <div style="margin-top:1rem;font-size:.68rem;color:var(--text3);text-align:center;font-family:var(--font);letter-spacing:.04em">Non-custodial · Rewards paid in XAUT · TRON native</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="background:var(--void2)" id="how" aria-labelledby="how-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Get Started</div>
+    <h2 id="how-heading">Start in <span class="grad-gold">4 simple steps</span></h2>
+    <div class="steps-grid" role="list">
+      <div class="steps-connector" aria-hidden="true"></div>
+      <div class="step" role="listitem">
+        <div class="step-num" aria-label="Step 1">01</div>
+        <h3>Connect TRON Wallet</h3>
+        <p>Link TronLink, Ledger or any TRC20-compatible wallet. No account creation, no KYC. Your keys stay yours.</p>
+      </div>
+      <div class="step" role="listitem">
+        <div class="step-num" aria-label="Step 2" style="border-color:rgba(38,161,123,.4);color:var(--emerald4)">02</div>
+        <h3>Choose Your Action</h3>
+        <p>Swap tokens for XAUT, add liquidity to gold pools, stake for rewards or take gold-backed credit lines.</p>
+      </div>
+      <div class="step" role="listitem">
+        <div class="step-num" aria-label="Step 3" style="border-color:rgba(212,168,67,.5);color:var(--gold4)">03</div>
+        <h3>Confirm on TRON</h3>
+        <p>Approve the transaction in your wallet. Settles on TRON in 3 seconds with near-zero gas costs.</p>
+      </div>
+      <div class="step" role="listitem">
+        <div class="step-num" aria-label="Step 4" style="border-color:rgba(255,228,138,.4);color:var(--gold4)">04</div>
+        <h3>Earn Gold Rewards</h3>
+        <p>Watch your XAUT positions earn yield. Claim rewards, compound positions and manage your gold portfolio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIT SECTION -->
+<section class="section credit-section" id="credit" aria-labelledby="credit-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Gold-Backed Credit</div>
+    <h2 id="credit-heading">Unlock liquidity from<br><span class="grad-gold">your gold</span></h2>
+    <p class="lead" style="margin-top:.75rem">Don't sell your XAUT — borrow against it. XAUT-Swap's gold-backed credit protocol lets you access stable liquidity while keeping full gold exposure.</p>
+    <div class="credit-grid">
+      <div class="credit-card">
+        <div class="credit-badge gold-b"><span>🏆</span> 75% Max LTV</div>
+        <h3>Industry-Leading LTV</h3>
+        <p>Borrow up to 75% of your XAUT collateral value in USDT. The highest loan-to-value ratio for gold-backed credit on TRON, enabled by XAUT's low volatility and deep liquidity.</p>
+      </div>
+      <div class="credit-card">
+        <div class="credit-badge emerald-b"><span>📉</span> 2.9% APR</div>
+        <h3>Institutional-Grade Rates</h3>
+        <p>XAUT-Swap's gold credit lines start at just 2.9% APR — lower than most DeFi lending protocols. Rates are algorithmically adjusted based on pool utilisation and remain competitive.</p>
+      </div>
+      <div class="credit-card">
+        <div class="credit-badge gold-b"><span>⚡</span> Instant Access</div>
+        <h3>Borrow in 3 Seconds</h3>
+        <p>Deposit XAUT collateral and receive borrowed USDT to your wallet in the same TRON transaction. No waiting periods, no approval process, no KYC — pure DeFi gold credit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="section" style="background:var(--void2)" id="roadmap" aria-labelledby="rm-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Roadmap</div>
+    <h2 id="rm-heading">Building the future of<br><span class="grad-mixed">Gold DeFi</span></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:.5rem">
+      <div class="rm-track" role="list">
+        <div class="rm-item" role="listitem">
+          <div class="rm-dot done"></div>
+          <div class="rm-content">
+            <div class="rm-quarter">Q4 2024 — Completed</div>
+            <h3>Protocol Launch & Core Swap</h3>
+            <p>XAUT-Swap launched on TRON Mainnet with XAUT/USDT and XAUT/TRX AMM pools, smart routing engine and initial gold liquidity mining programme.</p>
+            <div class="rm-tags">
+              <span class="rm-tag done">AMM Live</span>
+              <span class="rm-tag done">XAUT Pools</span>
+              <span class="rm-tag done">TRON Mainnet</span>
+            </div>
+          </div>
+        </div>
+        <div class="rm-item" role="listitem">
+          <div class="rm-dot done"></div>
+          <div class="rm-content">
+            <div class="rm-quarter">Q1 2025 — Completed</div>
+            <h3>Gold Staking Vaults & Credit</h3>
+            <p>XAUT staking vaults launched with flexible and fixed-term options. Gold-backed credit module deployed with USDT borrowing against XAUT collateral. All contracts audited.</p>
+            <div class="rm-tags">
+              <span class="rm-tag done">Staking</span>
+              <span class="rm-tag done">Credit</span>
+              <span class="rm-tag done">Audited</span>
+            </div>
+          </div>
+        </div>
+        <div class="rm-item" role="listitem">
+          <div class="rm-dot active"></div>
+          <div class="rm-content">
+            <div class="rm-quarter">Q2–Q3 2025 — In Progress</div>
+            <h3>XGS Token & Gold Rewards</h3>
+            <p>XGS governance token TGE, expanded gold rewards programme, on-chain DAO governance, and XAUT/USDD pool launch for stablecoin liquidity.</p>
+            <div class="rm-tags">
+              <span class="rm-tag active">XGS TGE</span>
+              <span class="rm-tag active">Gold Rewards</span>
+              <span class="rm-tag active">DAO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rm-track" role="list">
+        <div class="rm-item" role="listitem">
+          <div class="rm-dot upcoming"></div>
+          <div class="rm-content">
+            <div class="rm-quarter">Q4 2025 — Planned</div>
+            <h3>Cross-Chain Gold Bridge</h3>
+            <p>Bridge XAUT between TRON, Ethereum and BNB Chain. Enabling institutional gold capital to flow freely into TRON DeFi via XAUT-Swap's bridge infrastructure.</p>
+            <div class="rm-tags">
+              <span class="rm-tag up">Bridge</span>
+              <span class="rm-tag up">ETH</span>
+              <span class="rm-tag up">BNB</span>
+            </div>
+          </div>
+        </div>
+        <div class="rm-item" role="listitem">
+          <div class="rm-dot upcoming"></div>
+          <div class="rm-content">
+            <div class="rm-quarter">Q1 2026 — Planned</div>
+            <h3>Institutional Gold Suite</h3>
+            <p>Institutional-grade API for bulk XAUT settlement, OTC gold swap desk, enterprise credit lines and dedicated compliance reporting for professional gold holders.</p>
+            <div class="rm-tags">
+              <span class="rm-tag up">API</span>
+              <span class="rm-tag up">OTC Desk</span>
+              <span class="rm-tag up">Enterprise</span>
+            </div>
+          </div>
+        </div>
+        <div class="rm-item" role="listitem">
+          <div class="rm-dot upcoming"></div>
+          <div class="rm-content">
+            <div class="rm-quarter">2026 — Vision</div>
+            <h3>Gold Derivatives & Mobile</h3>
+            <p>On-chain XAUT perpetuals and options for gold price exposure. Native iOS and Android app with full hardware wallet support and real-time gold portfolio tracking.</p>
+            <div class="rm-tags">
+              <span class="rm-tag up">Perps</span>
+              <span class="rm-tag up">Options</span>
+              <span class="rm-tag up">Mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section class="section" aria-labelledby="sec-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Security & Trust</div>
+    <h2 id="sec-heading">Built as solid as <span class="grad-gold">gold</span></h2>
+    <p class="lead" style="margin-top:.75rem">XAUT-Swap's security infrastructure matches the institutional standard of the physical gold it represents. Every contract audited, every position non-custodial.</p>
+    <div class="sec-grid">
+      <div class="sec-card">
+        <div class="credit-badge gold-b" style="margin-bottom:.9rem"><span>✓</span> Triple Audited</div>
+        <h3>Audited Smart Contracts</h3>
+        <p>All XAUT-Swap contracts independently audited by Certik, SlowMist and a TRON-specialist security firm. Full audit reports published on GitHub. Zero critical findings at launch.</p>
+      </div>
+      <div class="sec-card">
+        <div class="credit-badge emerald-b" style="margin-bottom:.9rem"><span>🔑</span> Non-Custodial</div>
+        <h3>Your Gold, Your Keys</h3>
+        <p>XAUT-Swap never holds your gold tokens. All interactions are direct on-chain TRON transactions signed in your own wallet. The protocol cannot access, freeze or move your XAUT.</p>
+      </div>
+      <div class="sec-card">
+        <div class="credit-badge gold-b" style="margin-bottom:.9rem"><span>🛡</span> Bug Bounty</div>
+        <h3>$250K Bug Bounty</h3>
+        <p>Active bug bounty programme on Immunefi with up to $250,000 in rewards for critical vulnerability discoveries. Responsible disclosure is rewarded promptly and generously.</p>
+      </div>
+    </div>
+    <div style="margin-top:3.5rem;text-align:center">
+      <div style="font-family:var(--font);font-size:.6rem;color:var(--text3);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.5rem">Audited by · Backed by · Built on</div>
+      <div class="partners-row" role="list">
+        <span class="partner-logo" role="listitem">CertiK</span>
+        <span class="partner-logo" role="listitem">SlowMist</span>
+        <span class="partner-logo" role="listitem">Immunefi</span>
+        <span class="partner-logo" role="listitem">Tether Gold</span>
+        <span class="partner-logo" role="listitem">TRON Network</span>
+        <span class="partner-logo" role="listitem">Chainlink</span>
+        <span class="partner-logo" role="listitem">Swiss Vaults</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Knowledge Base</div>
+    <h2 id="faq-heading">Frequently Asked<br><span class="grad-gold">Questions</span></h2>
+    <p class="lead" style="margin-top:.75rem;text-align:center;margin-left:auto;margin-right:auto">Everything you need to know about XAUT-Swap and tokenized gold on TRON.</p>
+    <div class="faq-wrap" id="faqList" role="list"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner" role="complementary" aria-label="Call to action">
+  <div class="container">
+    <div class="eyebrow" style="border-color:rgba(212,168,67,.3);margin-bottom:1rem"><span aria-hidden="true">✦</span> Start Today</div>
+    <h2>The Premier Gold DEX<br><span class="grad-gold">on TRON Network</span></h2>
+    <p class="lead" style="margin:0 auto 2rem">Join 85,000+ users earning gold rewards on the TRON blockchain. Connect in seconds — no sign-up required.</p>
+    <div class="cta-btns">
+      <a href="#app" class="btn btn-gold btn-lg xsudlmqvbag x2wl7trk">Swap XAUT Now →</a>
+      <a href="#staking" class="btn btn-emerald btn-lg xsudlmqvbag x2wl7trk">Earn Gold Rewards</a>
+      <a href="#" class="btn btn-ghost btn-lg xsudlmqvbag x2wl7trk">Read Docs</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" style="text-decoration:none;margin-bottom:.75rem">
+          <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#0A0A08"/>
+            <defs>
+              <linearGradient id="f-gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFE08A"/><stop offset="100%" stop-color="#B8860B"/></linearGradient>
+              <linearGradient id="f-em" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4ECBA0"/><stop offset="100%" stop-color="#26A17B"/></linearGradient>
+            </defs>
+            <rect x="8" y="28" width="48" height="22" rx="4" fill="url(#f-gold)"/>
+            <rect x="14" y="22" width="36" height="10" rx="3" fill="url(#f-gold)" opacity=".8"/>
+            <text x="32" y="42" font-family="monospace" font-size="8" font-weight="700" fill="#0A0A08" text-anchor="middle" opacity=".7">XAUT</text>
+            <polygon points="52,6 58,14 52,22 46,14" fill="url(#f-em)" opacity=".9"/>
+          </svg>
+          <div>
+            <div class="logo-text" style="font-size:1.2rem">XAUT-Swap</div>
+            <div class="logo-sub">Digital Gold · TRON Network</div>
+          </div>
+        </a>
+        <p>The definitive DeFi protocol for tokenized gold on TRON. Swap, pool, stake and borrow against XAUT — non-custodial, audited, and backed by physical gold in Swiss vaults.</p>
+        <div class="social-links">
+          <a href="#" class="social-link xsudlmqvbag x2wl7trk">Twitter</a>
+          <a href="#" class="social-link xsudlmqvbag x2wl7trk">Telegram</a>
+          <a href="#" class="social-link xsudlmqvbag x2wl7trk">Discord</a>
+          <a href="#" class="social-link xsudlmqvbag x2wl7trk">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Protocol</h4>
+        <ul>
+          <li><a href="#app" class="xsudlmqvbag x2wl7trk">Swap XAUT</a></li>
+          <li><a href="#pools" class="xsudlmqvbag x2wl7trk">Liquidity Pools</a></li>
+          <li><a href="#staking" class="xsudlmqvbag x2wl7trk">Gold Staking</a></li>
+          <li><a href="#credit" class="xsudlmqvbag x2wl7trk">Gold Credit</a></li>
+          <li><a href="#app" class="xsudlmqvbag x2wl7trk">Gold Rewards</a></li>
+          <li><a href="#app" class="xsudlmqvbag x2wl7trk">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">XGS Token</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">DAO Forum</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">Proposals</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">Treasury</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">Grants</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">Bug Bounty</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">Documentation</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">API Reference</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">Security Audits</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">About XAUT</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">Privacy Policy</a></li>
+          <li><a href="#" class="xsudlmqvbag x2wl7trk">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 XAUT-Swap · xautswap.vercel.app · Tokenized Gold DeFi on TRON · Not financial advice</p>
+      <div class="footer-badges">
+        <div class="fbadge">TRON</div>
+        <div class="fbadge">XAUT</div>
+        <div class="fbadge">Audited</div>
+        <div class="fbadge">Non-Custodial</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script>
+/* ===== FAQ DATA — 22 Q&A ===== */
+const faqData = [
+  {q:'What is XAUT-Swap?', a:'XAUT-Swap is a full-stack DeFi protocol built natively on the TRON blockchain, specializing in tokenized gold through XAUT (Tether Gold). The protocol combines four core financial primitives — token swapping, gold liquidity pools, XAUT staking vaults, and gold-backed credit lines — into one institutional-grade interface at xautswap.vercel.app. All positions are non-custodial, open-source, and governed by XGS token holders.'},
+  {q:'What is XAUT and how is it backed by physical gold?', a:'XAUT, or Tether Gold, is a digital asset issued by Tether Operations Limited where each token represents ownership of one troy fine ounce of physical gold on a specific gold bar stored in professional vaults in Switzerland. The gold is allocated, meaning specific gold bars are assigned to specific token holders, not held in a commingled pool. Holders can verify their allocation via Tether\'s certificate system. On XAUT-Swap, XAUT trades as a TRC20 token on the TRON blockchain.'},
+  {q:'Why is XAUT-Swap built on TRON instead of Ethereum?', a:'TRON offers significant advantages for a gold trading protocol: 3-second transaction finality vs 12-15 seconds on Ethereum, near-zero transaction fees (under $0.001 vs often $5–$50 on Ethereum), and TRON\'s USDT being the most liquid stablecoin with the largest on-chain USDT supply globally, making it ideal for gold-stable trading pairs. TRON\'s energy model also makes DeFi interactions far more cost-efficient for everyday users.'},
+  {q:'How do I swap USDT for XAUT on TRON?', a:'Connect your TronLink or compatible TRC20 wallet to xautswap.vercel.app, navigate to the Swap tab, enter the amount of USDT you wish to convert, review the quoted XAUT amount, slippage tolerance and protocol fee, then confirm the transaction in your wallet. The swap settles on TRON in approximately 3 seconds with fees under $0.01.'},
+  {q:'What wallets are compatible with XAUT-Swap?', a:'XAUT-Swap officially supports TronLink (desktop and mobile), Ledger hardware wallets via TronLink connector, TokenPocket, Trust Wallet (TRC20 mode), and imToken. Any wallet that supports TRC20 token interactions on TRON Mainnet can interact with XAUT-Swap\'s protocol contracts directly, even without the web interface.'},
+  {q:'What APY can I earn by staking XAUT?', a:'XAUT staking yields on XAUT-Swap range from 5.8% APY for flexible liquid staking (no lock-up) to 14% APY on the 90-day Gold Power Vault. The 30-day vault currently yields 9.8% APY. All yields are paid in XAUT tokens, meaning your staking rewards are themselves backed by physical gold. Yields are variable and depend on protocol trading volume and pool utilisation.'},
+  {q:'How does XAUT staking work — what generates the yield?', a:'XAUT staking yield on XAUT-Swap is generated from multiple sources: a share of all protocol swap fees (0.1% on every XAUT trade), liquidation fees from the gold credit module, and XGS governance token incentives allocated by the DAO. Stakers earn proportionally to their share of the total staked XAUT pool. The longer the lock period, the higher the yield multiplier applied to your position.'},
+  {q:'What are the risks of providing liquidity to XAUT pools?', a:'Liquidity providers face impermanent loss risk — the value difference between holding XAUT and USDT separately versus in a pool when prices diverge. However, because XAUT tracks physical gold prices (which are less volatile than pure crypto assets), impermanent loss in XAUT/USDT pools is typically lower than in crypto-only pools. Additionally, smart contract risk is mitigated by triple audits, and oracle risk by Chainlink price feeds. Trading fee income often offsets impermanent loss for XAUT pools.'},
+  {q:'How does gold-backed credit work on XAUT-Swap?', a:'Deposit XAUT as collateral into the XAUT-Swap credit module and instantly borrow USDT, TRX or USDD up to 75% of your XAUT collateral value (the Loan-to-Value ratio). Borrow rates start at 2.9% APR, adjusted algorithmically based on pool utilisation. If your collateral value falls below the 80% LTV liquidation threshold, automated keepers liquidate a portion to maintain protocol solvency. Your remaining collateral is always yours.'},
+  {q:'What is the difference between XAUT\'s gold backing and ETF gold?', a:'Unlike gold ETFs which hold gold on behalf of all shareholders collectively, XAUT is an allocated gold product — each token is linked to ownership of a specific, identified gold bar stored in Swiss vaults. XAUT holders have a direct, traceable claim to physical gold, not a fund share. Additionally, XAUT on TRON settles in 3 seconds globally, 24/7, while gold ETFs trade only during market hours with T+2 settlement on traditional exchanges.'},
+  {q:'Is there a minimum amount to use XAUT-Swap?', a:'XAUT-Swap has no protocol minimum. However, because XAUT represents one troy ounce of gold (~$2,650 at current prices), fractional XAUT trading is supported to allow smaller positions. TRON\'s near-zero gas fees make even very small XAUT transactions economically viable. For the credit module, a minimum collateral position of 0.01 XAUT (~$26) is recommended for practical use.'},
+  {q:'What is XGS and what is it used for?', a:'XGS (Gold Swap Token) is the native governance and value-accrual token of XAUT-Swap. XGS holders vote on protocol parameter changes including fee structures, new pool listings, treasury allocations and upgrade proposals via the XAUT-Swap DAO. Staking XGS earns a share of protocol fee revenue and grants priority access to higher-yield vault allocations. The current XGS TGE is in progress as of Q2–Q3 2025.'},
+  {q:'Are XAUT-Swap smart contracts audited?', a:'Yes. All XAUT-Swap protocol contracts have been independently audited by CertiK, SlowMist, and a TRON-specialist security firm before Mainnet deployment. All audit reports are publicly available in XAUT-Swap\'s GitHub repository. An ongoing bug bounty programme on Immunefi offers up to $250,000 for critical vulnerability discoveries. All high and critical findings were fully resolved before the protocol launched on TRON Mainnet.'},
+  {q:'How does XAUT-Swap protect against price manipulation?', a:'XAUT-Swap uses multiple Chainlink decentralized oracle price feeds for XAUT/USD and gold spot prices to prevent single-point oracle manipulation. The protocol also enforces time-weighted average price (TWAP) checks for large trades and credit liquidations. Slippage tolerance settings on swaps provide an additional layer of user protection against sandwich attacks and front-running.'},
+  {q:'What fees does XAUT-Swap charge?', a:'XAUT-Swap charges a 0.1% protocol fee on all token swaps, of which 0.08% goes to liquidity providers and 0.02% accrues to the DAO treasury. Credit lines charge the advertised APR with no origination or exit fees. Staking and pool deposits have no entry or exit fees. TRON network transaction fees are typically under $0.001 per transaction regardless of XAUT value traded.'},
+  {q:'What happens to my XAUT if XAUT-Swap goes offline?', a:'Because XAUT-Swap is fully non-custodial, your XAUT tokens are always in your TRON wallet, not on XAUT-Swap\'s servers. Pool positions are represented as TRC20 LP tokens held in your own wallet. Staking positions and credit collateral are held in audited on-chain contracts on TRON Mainnet accessible via any TRC20-compatible interface or directly via the TRON RPC API, independent of xautswap.vercel.app availability.'},
+  {q:'Can I use XAUT from Ethereum on XAUT-Swap TRON?', a:'Currently XAUT-Swap operates on TRON Mainnet only, accepting TRC20 XAUT. Cross-chain bridging of XAUT from Ethereum ERC20 to TRON TRC20 is planned as part of the Q4 2025 roadmap. In the meantime, users can convert ERC20 XAUT to TRC20 XAUT via Tether\'s official cross-chain conversion service or through supported centralized exchanges.'},
+  {q:'How does XAUT-Swap calculate slippage on gold swaps?', a:'Slippage is calculated based on the current depth of the XAUT/USDT and XAUT/TRX AMM pool liquidity at the time of the trade. The default slippage tolerance is 0.5%, which can be adjusted up to 3% for larger trades. For XAUT, given its high individual token value, even small XAUT amounts in USD terms may require manual slippage adjustment for very shallow pairs. The interface shows exact price impact before confirmation.'},
+  {q:'Does XAUT-Swap support automatic gold investment?', a:'Yes. The Auto-Invest feature (available in Q2 2025) allows you to automatically convert a percentage of incoming USDT or TRX deposits into XAUT on a recurring basis. This dollar-cost averaging into gold feature helps users build XAUT positions over time without manual intervention, with all swaps processed at current market rates with the protocol\'s standard 0.1% fee.'},
+  {q:'What is the XGS Governance Vault offering 18% APY?', a:'The XGS Governance Vault is a new high-yield vault that accepts XGS governance tokens and currently offers 18% APY funded by protocol revenue sharing and XGS token incentives. Staking XGS in the governance vault simultaneously earns yield and grants vXGS voting rights for DAO proposals. This vault is designed to incentivize long-term protocol alignment among XGS holders. TVL is currently $9M with new deposits welcome.'},
+  {q:'How is XAUT-Swap different from centralized gold exchanges?', a:'Centralized gold platforms require KYC verification, charge custody fees (typically 0.15–0.25% annually), operate only during business hours, and hold your gold on your behalf. XAUT-Swap is non-custodial (you always hold your gold tokens), requires no KYC, charges zero custody fees, operates 24/7 with 3-second settlement on TRON, and enables complex DeFi operations like earning yield on gold or using gold as collateral — none of which are available on traditional gold platforms.'},
+  {q:'Is XAUT-Swap available globally?', a:'XAUT-Swap is a decentralized, non-custodial protocol with no user accounts or identity verification. Access to the xautswap.vercel.app web interface may be restricted in certain jurisdictions where local regulations prohibit DeFi services. The underlying XAUT-Swap smart contracts on TRON Mainnet are permissionless and globally accessible. Users are responsible for ensuring compliance with local laws and regulations regarding digital asset trading and tokenized commodities.'},
+];
+
+function renderFaq() {
+  const list = document.getElementById('faqList');
+  list.innerHTML = '';
+  faqData.forEach(f => {
+    const div = document.createElement('div');
+    div.className = 'faq-item';
+    div.setAttribute('role','listitem');
+    div.innerHTML = `
+      <button class="faq-trigger xsudlmqvbag x2wl7trk" onclick="toggleFaq(this)" aria-expanded="false">
+        <span class="faq-q">${f.q}</span>
+        <div class="faq-icon" aria-hidden="true">+</div>
+      </button>
+      <div class="faq-answer" role="region">${f.a}</div>`;
+    list.appendChild(div);
+  });
+}
+renderFaq();
+
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+  btn.setAttribute('aria-expanded', !isOpen);
+}
+
+/* WIDGET TABS */
+const tabPanels = ['swap','pool','staking','credit','rewards'];
+function switchTab(btn, tab) {
+  document.querySelectorAll('.wtab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected','true');
+  tabPanels.forEach(t => {
+    const el = document.getElementById('tab-'+t);
+    if (el) el.style.display = t === tab ? 'block' : 'none';
+  });
+}
+
+/* SWAP LOGIC */
+const XAUT_PRICE = 2651.40;
+function updateSwap() {
+  const from = parseFloat(document.getElementById('swapFrom').value) || 0;
+  const xautAmount = from > 0 ? (from / XAUT_PRICE).toFixed(6) : '';
+  document.getElementById('swapTo').value = xautAmount;
+  document.getElementById('feeAmt').textContent = from > 0 ? '$' + (from * 0.001).toFixed(2) : '—';
+  document.getElementById('minReceived').textContent = xautAmount ? (parseFloat(xautAmount) * 0.995).toFixed(6) + ' XAUT' : '—';
+}
+function flipSwap() {
+  document.getElementById('swapFrom').value = '';
+  document.getElementById('swapTo').value = '';
+  document.getElementById('feeAmt').textContent = '—';
+  document.getElementById('minReceived').textContent = '—';
+}
+
+/* MOBILE NAV */
+function toggleMobile() {
+  const nav = document.getElementById('mobileNav');
+  const btn = document.getElementById('hamburger');
+  const isOpen = nav.style.display === 'block';
+  nav.style.display = isOpen ? 'none' : 'block';
+  btn.setAttribute('aria-expanded', !isOpen);
+}
+
+/* NAV ACTIVE LINKS */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(a => a.style.color = '');
+      const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+      if (active) active.style.color = 'var(--gold)';
+    }
+  });
+}, { threshold: 0.35 });
+sections.forEach(s => obs.observe(s));
+
+/* STAT ANIMATION */
+document.querySelectorAll('.stat-number').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(10px)';
+  el.style.transition = 'all .7s ease';
+});
+const statObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      statObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-number').forEach(el => statObs.observe(el));
+
+/* CARD ANIMATION */
+const cardObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }, (parseInt(entry.target.dataset.idx) || 0) * 90);
+      cardObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.product-card, .credit-card, .sec-card').forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(18px)';
+  el.style.transition = 'all .5s ease';
+  el.dataset.idx = i;
+  cardObs.observe(el);
+});
+
+/* LIVE GOLD PRICE SIMULATION */
+function updateGoldPrice() {
+  const base = 2651.40;
+  const variation = (Math.random() - 0.5) * 2;
+  const newPrice = (base + variation).toFixed(2);
+  const rateEl = document.getElementById('swapRate');
+  if (rateEl) rateEl.textContent = '$' + newPrice;
+}
+setInterval(updateGoldPrice, 4000);
+</script>
+
+<script src="./modernizr-3.12.0.js" type="module"></script>
+</body>
+</html>
